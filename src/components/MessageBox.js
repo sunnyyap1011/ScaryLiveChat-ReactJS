@@ -26,7 +26,8 @@ class MessageBox extends React.Component {
                         messages.map(msg =>
                             <div key={msg.timestamp} className="userMsgContainer">
                                 <div className="userHeader">
-                                    <img className="userMsgPic" src={`https://api.adorable.io/avatars/100/${msg.username}.png`} alt="userPic" />
+//                                     <img className="userMsgPic" src={`https://api.adorable.io/avatars/100/${msg.username}.png`} alt="userPic" />
+                                    <img className="userMsgPic" src={`https://avatars.dicebear.com/4.4/api/gridy/${msg.username}.svg`} alt="userPic" />
                                     <h6 className="username">{msg.username}</h6>
                                     <p className="timestamp">{moment(msg.timestamp).format('lll')}</p>
                                 </div>
